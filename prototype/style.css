@@ -1,0 +1,57 @@
+/*
+GENERAL
+*/
+:root {
+  --calendar-border: rgb(220,220,255);
+  --calendar-fade-color: rgb(220, 220, 220);
+  --has-tours: rgb(0, 200, 0);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+CALENDAR
+*/
+#calendar-instructions {
+  width: 70%;
+  margin: 3em auto;
+  text-align: center;
+}
+
+table {
+  clear: both;
+  margin: auto;
+  width: 70%;
+  border-radius: 3px;
+  border-collapse: collapse;
+}
+
+td {
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 0px solid var(--calendar-border);
+  border-top: 1px solid var(--calendar-border);
+  width: 100% / 7;
+}
+
+td.hasTours {
+  background: radial-gradient(
+    circle,
+    var(--has-tours) 50%,
+    transparent 50%
+    )
+}
+
+td.not-current {
+  color: var(--calendar-fade-color);
+}
+
+thead td {
+  border:none;
+  color:@calendar-standout;
+  text-transform:uppercase;
+  font-size:1.8em;
+}
