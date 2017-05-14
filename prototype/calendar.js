@@ -119,11 +119,13 @@ Cal.prototype.showMonth = function(y, m) {
     var chk = new Date();
     var chkY = chk.getFullYear();
     var chkM = chk.getMonth();
+    var todayClass = 'normal';
+    var hasTours = Math.random() > 0.7 ? ' hasTours' : ''
     if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay) {
-      html += '<td class="today">' + i + '</td>';
-    } else {
-      html += '<td class="normal">' + i + '</td>';
+      todayClass = 'today'
     }
+    // make all table datas a link to the same page for now
+    html += '<td class="' + todayClass + hasTours + '">' + '<a href="./list.html">' + i + '</a>' + '</td>';
     // If Saturday, closes the row
     if ( dow == 6 ) {
       html += '</tr>';
@@ -155,12 +157,18 @@ Cal.prototype.showMonth = function(y, m) {
   c.showcurr();
 
   // Bind next and previous button clicks
-  document.getElementById('btnNext').onclick = function() {
+  document.getElementById('btnNext').onclick = function () {
     c.nextMonth();
   };
 
-  document.getElementById('btnPrev').onclick = function() {
+  document.getElementById('btnPrev').onclick = function () {
     c.previousMonth();
   };
+
+  document.querySelector('td').forEach(function (td) {
+    td.onclick = function () {
+
+    }
+  })
 
 })();
