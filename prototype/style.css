@@ -20,6 +20,16 @@ CALENDAR
   text-align: center;
 }
 
+#btnNext {
+  float:left;
+  margin-bottom:0px;
+}
+
+#btnPrev {
+  float:right;
+  margin-bottom:20px;
+}
+
 table {
   clear: both;
   margin: auto;

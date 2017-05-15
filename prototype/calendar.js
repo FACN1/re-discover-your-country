@@ -70,6 +70,8 @@ Cal.prototype.showcurr = function() {
 // Show month (year, month)
 Cal.prototype.showMonth = function(y, m) {
 
+  var html = '';
+
   var d = new Date()
   // First day of the week in the selected month
   , firstDayOfMonth = new Date(y, m, 1).getDay()
@@ -79,7 +81,7 @@ Cal.prototype.showMonth = function(y, m) {
   , lastDayOfLastMonth = m == 0 ? new Date(y-1, 11, 0).getDate() : new Date(y, m, 0).getDate();
 
 
-  var html = '<table>';
+  html += '<table>';
 
   // Write selected month and year
   html += '<thead><tr>';
