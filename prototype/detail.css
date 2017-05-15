@@ -1,0 +1,69 @@
+html {
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0em;
+}
+
+.header {
+  position: relative;
+  background: #fff6a2;
+  width: 100%;
+  height: 2.5em;
+}
+
+.header .fa-calendar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 1.5em;
+}
+
+.feature-image {
+  width: 100%;
+}
+
+.summary-text {
+  margin: 2em 0em;
+}
+
+.book-section {
+  box-sizing: border-box;
+  margin: 1em 0em;
+  background: #f3f3f3;
+  padding: 1em;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0em 0.5em;
+}
+
+.book-button {
+  width: 8em;
+  height: 3em;
+  background: #56ff9e;
+  font-size: medium;
+}
+
+.guide-section {
+  box-sizing: border-box;
+  margin: 1em 0em;
+  padding: 1em;
+  border: 1px solid #dddddd;
+}
+
+.guide-picture {
+  float: left;
+  margin: 0.3em;
+  width: 3em;
+  height: 3em;
+}
