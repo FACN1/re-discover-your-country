@@ -4,7 +4,7 @@ GENERAL
 :root {
   --calendar-border: rgb(220,220,255);
   --calendar-fade-color: rgb(220, 220, 220);
-  --has-tours: rgba(176, 255, 176, 1);
+  --date-has-tours: #caf5ff;
 }
 
 body {
@@ -20,31 +20,51 @@ CALENDAR
   text-align: center;
 }
 
+.calendar-container {
+  position: relative;
+}
+
+.calendar {
+  border: 1px solid var(--calendar-border);
+}
+
 #btnNext {
-  float:left;
-  margin-bottom:0px;
+  position: absolute;
+  left: 15%;
+  top: 1.2em;
 }
 
 #btnPrev {
-  float:right;
-  margin-bottom:20px;
+  position: absolute;
+  right: 15%;
+  top: 1.2em;
 }
 
 table {
   clear: both;
   margin: auto;
-  width: 70%;
-  border-radius: 3px;
+  width: 95%;
   border-collapse: collapse;
+  border: 1px solid var(--calendar-border);
+}
+
+tr.days {
+  border-top: 1px solid var(--calendar-border);
+  border-bottom: 1px solid var(--calendar-border);
+}
+
+thead td {
+  height: 3.5rem;
 }
 
 td {
-  height: 48px;
+  height: 3rem;
   text-align: center;
   vertical-align: middle;
-  border-right: 0px solid var(--calendar-border);
-  border-top: 1px solid var(--calendar-border);
-  width: 100% / 7;
+  border-left: 1px solid var(--calendar-border);
+  border-right: 1px solid var(--calendar-border);
+  /* width is 100% / 7 */
+  width: 14.285714%;
 }
 
 td a {
@@ -55,7 +75,7 @@ td a {
 td.hasTours {
   background: radial-gradient(
     circle,
-    var(--has-tours) 45%,
+    var(--date-has-tours) 45%,
     transparent 50%
     )
 }
@@ -65,8 +85,5 @@ td.not-current {
 }
 
 thead td {
-  border:none;
-  color:@calendar-standout;
-  text-transform:uppercase;
   font-size:1.8em;
 }
