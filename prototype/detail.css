@@ -4,11 +4,34 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 1em;
+  margin: 0em;
+}
+
+.header {
+  position: relative;
+  background: #fff6a2;
+  width: 100%;
+  height: 2.5em;
+}
+
+.header .fa-calendar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 1.5em;
 }
 
 .feature-image {
   width: 100%;
+}
+
+.summary-text {
+  margin: 2em 0em;
 }
 
 .book-section {
