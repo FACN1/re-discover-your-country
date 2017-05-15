@@ -1,0 +1,89 @@
+/*
+GENERAL
+*/
+:root {
+  --calendar-border: rgb(220,220,255);
+  --calendar-fade-color: rgb(220, 220, 220);
+  --date-has-tours: #caf5ff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+CALENDAR
+*/
+#calendar-instructions {
+  width: 70%;
+  margin: 3em auto;
+  text-align: center;
+}
+
+.calendar-container {
+  position: relative;
+}
+
+.calendar {
+  border: 1px solid var(--calendar-border);
+}
+
+#btnNext {
+  position: absolute;
+  left: 15%;
+  top: 1.2em;
+}
+
+#btnPrev {
+  position: absolute;
+  right: 15%;
+  top: 1.2em;
+}
+
+table {
+  clear: both;
+  margin: auto;
+  width: 95%;
+  border-collapse: collapse;
+  border: 1px solid var(--calendar-border);
+}
+
+tr.days {
+  border-top: 1px solid var(--calendar-border);
+  border-bottom: 1px solid var(--calendar-border);
+}
+
+thead td {
+  height: 3.5rem;
+}
+
+td {
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid var(--calendar-border);
+  border-right: 1px solid var(--calendar-border);
+  /* width is 100% / 7 */
+  width: 14.285714%;
+}
+
+td a {
+  text-decoration: none;
+  color: black;
+}
+
+td.hasTours {
+  background: radial-gradient(
+    circle,
+    var(--date-has-tours) 45%,
+    transparent 50%
+    )
+}
+
+td.not-current {
+  color: var(--calendar-fade-color);
+}
+
+thead td {
+  font-size:1.8em;
+}
