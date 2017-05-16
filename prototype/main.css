@@ -1,7 +1,11 @@
 
+.GbuttonH{
+  font-size: 52px;
+}
+
 .Gbutton {
   padding: 15px 25px;
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -10,6 +14,8 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  white-space: normal;
+  transition: 0.5s;
 }
 
 .button:hover {background-color: #3e8e41}
@@ -21,6 +27,17 @@
 }
 
 .messageform{
-  height: 300px;
-  width: 600px;
+  height: 200px;
+  width: 500px;
+}
+
+
+.txtbxform{
+  height: 50px;
+  width: 500px;
+}
+
+.typed-cursor {
+font-size: 40px;
+color: rgb(40, 78, 255);
 }
