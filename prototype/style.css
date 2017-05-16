@@ -2,13 +2,24 @@
 GENERAL
 */
 :root {
+  /* Nazarene tours branding */
+  --primary-red: #e31837;
+  --primary-black: #000000;
+  --secondary-white: #ffffff;
+  --secondary-yellow: #ffd200;
+  --secondary-orange: #f3901d;
+
+  --font-family: 'Helvetica';
+  --arabic-body-text-colour: #666666;
+
+  /* other */
   --calendar-border: rgb(220,220,255);
   --calendar-fade-color: rgb(220, 220, 220);
   --date-has-tours: #caf5ff;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family), sans-serif;
 }
 
 /*
