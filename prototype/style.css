@@ -37,7 +37,13 @@ body {
   margin: 0em;
 }
 
+a {
+  text-decoration: none;
+  color: var(--body-colour);
+}
+
 .header {
+  color: var(--title-colour);
   position: relative;
   background: var(--primary-red);
   width: 100%;
@@ -46,6 +52,15 @@ body {
 }
 
 .header .fa-calendar {
+  color: var(--title-colour);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
+}
+
+.header #header-back-button {
+  color: var(--title-colour);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
