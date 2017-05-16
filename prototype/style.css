@@ -6,16 +6,24 @@ GENERAL
   --primary-red: #e31837;
   --primary-black: #000000;
   --secondary-white: #ffffff;
+  /* rgb(250, 204, 18) */
   --secondary-yellow: #ffd200;
+  /* rgb(246, 138, 32) */
   --secondary-orange: #f3901d;
 
+  --secondary-yellow-fade: rgba(250, 204, 18, 0.6);
+  --secondary-orange-fade: rgba(246, 138, 42, 0.2);
+
   --font-family: 'Helvetica';
-  --arabic-body-text-colour: #666666;
+  --body-colour: #666666;
+  --title-colour: #000000;
 
   /* other */
-  --calendar-border: rgb(220,220,255);
   --calendar-fade-color: rgb(220, 220, 220);
-  --date-has-tours: #caf5ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-colour);
 }
 
 html {
@@ -24,8 +32,24 @@ html {
 
 body {
   font-family: var(--font-family), sans-serif;
+  color: var(--body-colour);
   box-sizing: border-box;
   margin: 0em;
+}
+
+.header {
+  position: relative;
+  background: var(--primary-red);
+  width: 100%;
+  height: 2.5em;
+  border-bottom: 5px solid var(--secondary-orange);
+}
+
+.header .fa-calendar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
 }
 
 /*
@@ -42,7 +66,7 @@ CALENDAR
 }
 
 .calendar {
-  border: 1px solid var(--calendar-border);
+  border: 1px solid var(--secondary-yellow-fade);
 }
 
 #btnNext {
@@ -62,12 +86,17 @@ table {
   margin: auto;
   width: 95%;
   border-collapse: collapse;
-  border: 1px solid var(--calendar-border);
+  border: 1px solid var(--secondary-orange-fade);
 }
 
 tr.days {
-  border-top: 1px solid var(--calendar-border);
-  border-bottom: 1px solid var(--calendar-border);
+  border-top: 0px solid var(--secondary-orange-fade);
+  border-bottom: 0px solid var(--secondary-orange-fade);
+}
+
+thead {
+  color: var(--title-colour);
+  background: var(--secondary-yellow-fade);
 }
 
 thead td {
@@ -78,8 +107,8 @@ td {
   height: 3rem;
   text-align: center;
   vertical-align: middle;
-  border-left: 1px solid var(--calendar-border);
-  border-right: 1px solid var(--calendar-border);
+  border-left: 1px solid var(--secondary-yellow-fade);
+  border-right: 1px solid var(--secondary-yellow-fade);
   /* width is 100% / 7 */
   width: 14.285714%;
 }
@@ -92,7 +121,7 @@ td a {
 td.hasTours {
   background: radial-gradient(
     circle,
-    var(--date-has-tours) 45%,
+    var(--secondary-orange-fade) 45%,
     transparent 50%
     )
 }
@@ -109,23 +138,14 @@ thead td {
 DETAIL VIEW
 */
 
-.header {
-  position: relative;
-  background: var(--primary-red);
-  width: 100%;
-  height: 2.5em;
-}
-
-.header .fa-calendar {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 1em;
+.title {
+  color: var(--title-colour);
+  padding: 0em 1em;
 }
 
 .content {
   box-sizing: border-box;
-  padding: 1.5em;
+  padding: 0.5em 1.5em;
 }
 
 .feature-image {
