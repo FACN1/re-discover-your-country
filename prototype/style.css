@@ -3,16 +3,17 @@ GENERAL
 */
 :root {
   /* Nazarene tours branding */
-  --primary-red: #e31837;
-  --primary-black: #000000;
-  --secondary-white: #ffffff;
+  --red: #e31837;
+  --black: #000000;
+  --blue: #3083da;
+  --white: #ffffff;
   /* rgb(250, 204, 18) */
-  --secondary-yellow: #ffd200;
+  --yellow: #ffd200;
   /* rgb(246, 138, 32) */
-  --secondary-orange: #f3901d;
+  --orange: #f3901d;
 
-  --secondary-yellow-fade: rgba(250, 204, 18, 0.6);
-  --secondary-orange-fade: rgba(246, 138, 42, 0.2);
+  --yellow-fade: rgba(250, 204, 18, 0.6);
+  --orange-fade: rgba(246, 138, 42, 0.2);
 
   --font-family: 'Helvetica';
   --body-colour: #666666;
@@ -45,10 +46,10 @@ a {
 .header {
   color: var(--title-colour);
   position: relative;
-  background: var(--primary-red);
+  background: var(--red);
   width: 100%;
   height: 2.5em;
-  border-bottom: 5px solid var(--secondary-orange);
+  border-bottom: 5px solid var(--orange);
 }
 
 .header .fa-calendar {
@@ -81,7 +82,7 @@ CALENDAR
 }
 
 .calendar {
-  border: 1px solid var(--secondary-yellow-fade);
+  border: 1px solid var(--yellow-fade);
 }
 
 #btnNext {
@@ -101,17 +102,17 @@ table {
   margin: auto;
   width: 95%;
   border-collapse: collapse;
-  border: 1px solid var(--secondary-orange-fade);
+  border: 1px solid var(--orange-fade);
 }
 
 tr.days {
-  border-top: 0px solid var(--secondary-orange-fade);
-  border-bottom: 0px solid var(--secondary-orange-fade);
+  border-top: 0px solid var(--orange-fade);
+  border-bottom: 0px solid var(--orange-fade);
 }
 
 thead {
   color: var(--title-colour);
-  background: var(--secondary-yellow-fade);
+  background: var(--yellow-fade);
 }
 
 thead td {
@@ -122,8 +123,8 @@ td {
   height: 3rem;
   text-align: center;
   vertical-align: middle;
-  border-left: 1px solid var(--secondary-yellow-fade);
-  border-right: 1px solid var(--secondary-yellow-fade);
+  border-left: 1px solid var(--yellow-fade);
+  border-right: 1px solid var(--yellow-fade);
   /* width is 100% / 7 */
   width: 14.285714%;
 }
@@ -136,7 +137,7 @@ td a {
 td.hasTours {
   background: radial-gradient(
     circle,
-    var(--secondary-orange-fade) 45%,
+    var(--orange-fade) 45%,
     transparent 50%
     )
 }
@@ -187,7 +188,7 @@ DETAIL VIEW
 .book-button {
   width: 8em;
   height: 3em;
-  background: var(--secondary-yellow);
+  background: var(--yellow);
   font-size: medium;
 }
 
