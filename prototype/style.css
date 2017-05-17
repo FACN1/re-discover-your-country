@@ -173,8 +173,38 @@ thead td {
 /*
 LIST VIEW
 */
-.list-item {
+.date-select-section {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
 
+.date-select-section .date {
+  font-size: 1.5em;
+  position: relative;
+  top: 0.4em;
+  padding: 0em 0.2em;
+}
+
+.day-toggle-button {
+  position: relative;
+  top: 0.5em;
+}
+
+.list-item {
+  margin-bottom: 1em;
+  /*border-top: 3px solid var(--calendar-fade-color);
+  border-bottom: 3px solid var(--calendar-fade-color);*/
+  padding: 0em 0em 1em 0em;
+  box-sizing: border-box;
+}
+
+.li-title {
+  margin: 0.6em 0em;
+  padding: 0em 1em;
+  position: absolute;
+  bottom: 0;
+  color: white;
 }
 
 .li-image-container {
@@ -200,6 +230,33 @@ LIST VIEW
   width: 100%;
 }
 
+.li-book-section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0em 1em;
+}
+
+.li-book-section p {
+  margin: 0.5em 0em;
+}
+
+.li-button {
+  margin: 0.3em 0em 0em 0.5em;
+  background: #f9f9f9;
+  border-radius: 30px;
+  width: 8em;
+  height: 3em;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.li-book-button {
+  border: 3px solid var(--blue);
+}
+
+.li-more-info-button {
+  border: 3px solid var(--orange);
+}
 
 /*
 DETAIL VIEW
