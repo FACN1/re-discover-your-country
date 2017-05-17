@@ -156,9 +156,9 @@ td.hasTours {
   background: radial-gradient(
     circle,
     transparent 45%,
-    var(--blue) 45%,
+    var(--blue) 48%,
     var(--blue) 50%,
-    transparent 50%
+    transparent 55%
     )
 }
 
@@ -192,6 +192,7 @@ DETAIL VIEW
 }
 
 .book-section {
+  border-radius: 5px;
   box-sizing: border-box;
   margin: 1em 0em;
   background: #f3f3f3;
@@ -221,6 +222,7 @@ DETAIL VIEW
 }
 
 .guide-section {
+  border-radius: 5px;
   box-sizing: border-box;
   margin: 1em 0em;
   padding: 1em;
