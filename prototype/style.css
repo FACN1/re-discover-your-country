@@ -2,19 +2,98 @@
 GENERAL
 */
 :root {
-  --calendar-border: rgb(220,220,255);
+  /* Nazarene tours branding */
+  --red: #e31837;
+  --black: #000000;
+  --gray: #f9f9f9;
+  --blue: #3083da;
+  --white: #ffffff;
+  /* rgb(250, 204, 18) */
+  --yellow: #ffd200;
+  /* rgb(246, 138, 32) */
+  --orange: #f3901d;
+
+  --yellow-fade: rgba(250, 204, 18, 0.6);
+  --orange-fade: rgba(246, 138, 42, 0.2);
+
+  --font-family: 'Helvetica';
+  --body-colour: #666666;
+  --title-colour: #000000;
+
+  /* other */
   --calendar-fade-color: rgb(220, 220, 220);
-  --date-has-tours: #caf5ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-colour);
+}
+
+html {
+  width: 100%;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family), sans-serif;
+  color: var(--body-colour);
+  background: var(--gray);
+  box-sizing: border-box;
+  margin: 0em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--body-colour);
+}
+
+.header {
+  color: var(--blue);
+  position: relative;
+  width: 100%;
+  height: 3em;
+  border-bottom: 2px solid var(--red);
+}
+
+.header:after {
+  z-index: -1;
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  height: 10px;
+  left: 0px;
+  right: 0px;
+  bottom: -7px;
+  background: var(--gray);
+  border-bottom: 2px solid var(--blue);
+}
+
+.header-logo {
+  position: absolute;
+  width: 2.3em;
+  left: 0.6em;
+  top: 0.3em
+}
+
+.header .fa-calendar {
+  color: var(--title-colour);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
+}
+
+.header #header-back-button {
+  color: var(--blue);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
 }
 
 /*
 CALENDAR
 */
 #calendar-instructions {
+  color: var(--blue);
   width: 70%;
   margin: 3em auto;
   text-align: center;
@@ -24,33 +103,34 @@ CALENDAR
   position: relative;
 }
 
-.calendar {
-  border: 1px solid var(--calendar-border);
-}
 
 #btnNext {
+  color: var(--blue);
   position: absolute;
   left: 15%;
   top: 1.2em;
 }
 
 #btnPrev {
+  color: var(--blue);
   position: absolute;
   right: 15%;
   top: 1.2em;
 }
 
 table {
-  clear: both;
   margin: auto;
-  width: 95%;
+  width: 100%;
   border-collapse: collapse;
-  border: 1px solid var(--calendar-border);
 }
 
 tr.days {
-  border-top: 1px solid var(--calendar-border);
-  border-bottom: 1px solid var(--calendar-border);
+  border-top: 0px solid var(--orange-fade);
+  border-bottom: 0px solid var(--orange-fade);
+}
+
+thead {
+  color: var(--blue);
 }
 
 thead td {
@@ -61,8 +141,8 @@ td {
   height: 3rem;
   text-align: center;
   vertical-align: middle;
-  border-left: 1px solid var(--calendar-border);
-  border-right: 1px solid var(--calendar-border);
+  border-left: 1px solid var(--orange);
+  border-right: 1px solid var(--orange);
   /* width is 100% / 7 */
   width: 14.285714%;
 }
@@ -75,7 +155,9 @@ td a {
 td.hasTours {
   background: radial-gradient(
     circle,
-    var(--date-has-tours) 45%,
+    transparent 45%,
+    var(--blue) 45%,
+    var(--blue) 50%,
     transparent 50%
     )
 }
@@ -86,4 +168,67 @@ td.not-current {
 
 thead td {
   font-size:1.8em;
+}
+
+/*
+DETAIL VIEW
+*/
+.title {
+  color: var(--title-colour);
+  padding: 0.5em 1em 0em 1em;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 0.5em 1.5em;
+}
+
+.feature-image {
+  width: 100%;
+}
+
+.summary-text {
+  margin: 2em 0em;
+}
+
+.book-section {
+  box-sizing: border-box;
+  margin: 1em 0em;
+  background: #f3f3f3;
+  padding: 1em;
+}
+
+.b {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0em 0.5em;
+}
+
+.black {
+  color: black;
+}
+
+.book-button {
+  margin: 0.8em 0em;
+  background: #f9f9f9;
+  border-radius: 30px;
+  border: 3px solid var(--blue);
+  width: 8em;
+  height: 3em;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.guide-section {
+  box-sizing: border-box;
+  margin: 1em 0em;
+  padding: 1em;
+  border: 1px solid #dddddd;
+}
+
+.guide-picture {
+  float: left;
+  margin: 0.3em;
+  width: 3em;
 }
