@@ -263,3 +263,65 @@ DETAIL VIEW
   margin: 0.3em;
   width: 3em;
 }
+
+
+/*
+Homepage
+*/
+
+.background-image {
+  background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.homecontent {
+  background: rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 2;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+/*/ Linear gradient for splash page: /*/
+.GradientBackground {
+  background: linear-gradient(-180deg, #D2F0FF 0%, #3389D7 74%, #293255 100%);
+  height: 100vh;
+}
+
+
+
+/*
+Homepage Buttons
+*/
+
+.divabsolute {
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+/*/ Discover button: /*/
+.WhiteButton {
+  font-family: HelveticaNeue;
+  font-size: 20px;
+  color: black;
+  border: 2px solid #FFFFFF;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.35);
+  align: center;
+}
