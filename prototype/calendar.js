@@ -167,10 +167,4 @@ Cal.prototype.showMonth = function(y, m) {
     c.previousMonth();
   };
 
-  document.querySelector('td').forEach(function (td) {
-    td.onclick = function () {
-
-    }
-  })
-
 })();
