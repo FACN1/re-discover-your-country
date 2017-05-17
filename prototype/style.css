@@ -49,8 +49,8 @@ a {
   color: var(--blue);
   position: relative;
   width: 100%;
-  height: 2.9em;
-  border-bottom: 3px solid var(--red);
+  height: 3em;
+  border-bottom: 2px solid var(--red);
 }
 
 .header:after {
@@ -61,9 +61,16 @@ a {
   height: 10px;
   left: 0px;
   right: 0px;
-  bottom: -10px;
+  bottom: -7px;
   background: var(--gray);
-  border-bottom: 3px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
+}
+
+.header-logo {
+  position: absolute;
+  width: 2.3em;
+  left: 0.6em;
+  top: 0.3em
 }
 
 .header .fa-calendar {
