@@ -329,6 +329,10 @@ DETAIL VIEW
 Homepage
 */
 
+#logo {
+  position: relative;
+}
+
 .background-image {
   background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');
   background-size: cover;
@@ -342,10 +346,25 @@ Homepage
   z-index: 1;
 }
 
+.HomeBackGround{
+  background-image: url('./assets/Mount-of-Beatitudes-Galilee-Israel1a.jpg');
+  background-size: cover;
+  display: block;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  /*box-shadow: 0 9px #999;*/
+  /*transition: filter 5.0s;*/
+}
+
 .homecontent {
-  background: rgba(255, 255, 255, 0.35);
+  /*background: rgba(255, 255, 255, 0.35);*/
   box-sizing: border-box;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  /*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);*/
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   left: 0;
   position: fixed;
@@ -361,7 +380,12 @@ Homepage
   height: 100vh;
 }
 
-
+#homepage-text {
+  text-align: center;
+  color: #363131;
+  padding: 0em 1em;
+  font-size: 1.6em;
+}
 
 /*
 Homepage Buttons
@@ -384,4 +408,5 @@ Homepage Buttons
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.35);
   align: center;
+  white-space: normal;
 }
