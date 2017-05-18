@@ -127,7 +127,7 @@ Cal.prototype.showMonth = function(y, m) {
       todayClass = 'today'
     }
     // make all table datas a link to the same page for now
-    html += '<td class="' + todayClass + hasTours + '">' + '<a href="./list.html">' + i + '</a>' + '</td>';
+    html += '<td class="' + todayClass + hasTours + '">' + '<a href="./list_22.html">' + i + '</a>' + '</td>';
     // If Saturday, closes the row
     if ( dow == 6 ) {
       html += '</tr>';
