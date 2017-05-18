@@ -341,7 +341,11 @@ Homepage
 */
 
 #logo {
-  position: relative;
+  position: absolute;
+  top: 24%;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .background-image {
@@ -392,9 +396,15 @@ Homepage
 }
 
 #homepage-text {
+  position: absolute;
+  top: 40%;
+  z-index: 100;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #363131;
-  padding: 0em 1em;
+  /*padding: 0em 1em;*/
   font-size: 1.6em;
 }
 
@@ -404,9 +414,9 @@ Homepage Buttons
 
 .divabsolute {
   position: absolute;
+  top: 55%;
   left: 50%;
   margin-left: -80px;
-  bottom: 50px;
   z-index: 1;
 }
 
