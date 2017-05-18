@@ -5,6 +5,24 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function(){
+        var initialDelay = 1.5;
+        TweenLite.from('.HomeBackGround', 1, {
+          css: {
+            'filter': 'blur(15px)','-webkit-filter': 'blur(15px)'
+          },
+          ease:Power2.easeInOut,
+          delay: initialDelay
+        })
+        TweenLite.from('#logo', 0.7, {bottom: -150, ease:Power2.easeInOut, delay: initialDelay})
+        TweenLite.from('#homepage-text', 0.7, {opacity: 0, ease:Power2.easeInOut, delay: initialDelay + 0.5})
+        TweenLite.from('#buttons-container', 0.7, {bottom: -300, ease:Power2.easeInOut, delay: initialDelay + 0.5})
+      }
+    </script>
   </head>
   <body>
     <div class="HomeBackGround">
@@ -13,16 +31,16 @@
     <div class="homecontent">
 
       <div align="center">
-        <img src="./assets/logo.png" width="150" height="150">
+        <img id="logo" src="./assets/logo.png" width="150" height="150">
       </div>
       <br>
 
-      <p lang="ar" xml:lang="ar" dir="rtl" style="font-size: 15pt;text-align: center;">
-      انعش حنيت وطنك واحجز رحلتك الان 
+      <p id="homepage-text" lang="ar" xml:lang="ar" dir="rtl">
+      انعش حنيت وطنك واحجز رحلتك الان
       </p>
 
     </div>
-    <div class="divabsolute">
+    <div id="buttons-container" class="divabsolute">
       <input type="button" class="WhiteButton" align="center" style="height:80px;width:160px" onclick="location.href='calendar.html';" name="CALENDAR" value="رزنامة">
         <br><br>
       <input type="button" class="WhiteButton" align="center" style="height:80px;width:160px" onclick="location.href='homepage.html';" name="MAP" value="خريطه ">
