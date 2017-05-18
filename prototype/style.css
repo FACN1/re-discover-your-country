@@ -380,7 +380,12 @@ Homepage
   height: 100vh;
 }
 
-
+#homepage-text {
+  text-align: center;
+  color: #363131;
+  padding: 0em 1em;
+  font-size: 1.6em;
+}
 
 /*
 Homepage Buttons
