@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Nazarene Tours - نزارين تورز</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body lang="ar" xml:lang="ar" dir="rtl">
+
+
+  <header  class="header">
+      <h2 align="center" class="headertext"> تعبئة الاستمارة </h2>
+    <a href="./homepage.html">
+      <img src="./assets/logo-no-text.png" class="header-logo"/>
+    </a>
+    <a href="./homepage.html">
+      <i id="header-back-button" class="fa fa-chevron-right"></i>
+    </a>
+  </header>
+
+
+
+<!-- <form action="/action_page.php" style="border:1px solid #ccc"> -->
+  <form class="padtoside" action="mailto:MyEMAIL@gmail.com" method="post" style="border:1px solid #ccc">
+  <div class="container">
+    <label><b> الاسم الشخصي: </b></label>
+    <input type="text" placeholder=" اكتب الاسم الشخصي " name="name" required>
+
+    <label><b> البريد الالكتروني: </b></label>
+    <input type="text" placeholder=" اكتب البريد الالكترون " name="email" required>
+
+    <label><b> رقم الهاتف: </b></label>
+    <input type="text" placeholder="  اكتب  رقم الهاتف" name="phone">
+
+    <label><b> عنوان الرساله: </b></label>
+    <input type="text" placeholder=" اكتب عنوان الرساله " name="subject">
+
+    <label><b> رساله: </b></label>
+<textarea name="your-message" cols="25" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
+
+
+
+    <div class="clearfix">
+      <button type="submit" button class="li-button li-book-button" onclick="success()"> احجز الآن </button>
+      <button type="button" class="li-button li-more-info-button" onclick="goBack()"> إلغاء </button>
+      <script>
+      function success() {
+        window.location.href = './success.html'
+      }
+      function goBack() {
+          window.history.back();
+      }
+      </script>
+
+    </div>
+
+  </div>
+</form>
+
+</body>
+</html>
