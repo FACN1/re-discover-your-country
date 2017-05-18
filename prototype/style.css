@@ -173,6 +173,12 @@ thead td {
 /*
 LIST VIEW
 */
+
+.no-results {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 .date-select-section {
   pointer-events: none;
   position: relative;
@@ -188,6 +194,7 @@ LIST VIEW
 }
 
 .day-toggle-button {
+  pointer-events: auto;
   position: relative;
   top: 0.5em;
 }
