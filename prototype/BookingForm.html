@@ -23,7 +23,7 @@
 
 
 <!-- <form action="/action_page.php" style="border:1px solid #ccc"> -->
-  <form class="padtoside" action="mailto:MyEMAIL@gmail.com" method="post" style="border:1px solid #ccc">
+  <form class="padtoside" action="success.html" method="get" style="border:1px solid #ccc">
   <div class="container">
     <label><b> الاسم الشخصي: </b></label>
     <input type="text" placeholder=" اكتب الاسم الشخصي " name="name" required>
@@ -43,12 +43,12 @@
 
 
     <div class="clearfix">
-      <button type="submit" button class="li-button li-book-button" onclick="success()"> احجز الآن </button>
+      <button type="submit" button class="li-button li-book-button"> احجز الآن </button>
       <button type="button" class="li-button li-more-info-button" onclick="goBack()"> إلغاء </button>
       <script>
-      function success() {
-        window.location.href = './success.html'
-      }
+      // function success() {
+      //   window.location.href = './success.html'
+      // }
       function goBack() {
           window.history.back();
       }
