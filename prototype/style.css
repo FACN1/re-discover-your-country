@@ -422,9 +422,6 @@ Homepage Buttons
   white-space: normal;
 }
 
-
-
-
 /*
 BookingForm
 */
@@ -506,3 +503,25 @@ label {
   margin: 0;
   padding: 0.5em 0;
 }
+
+/*
+SUCESS PAGE
+*/
+
+#tick {
+  color: var(--blue);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.success-message {
+  width: 70%;
+  margin: auto;
+  font-size: 1.5em;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 80%;
+  text-align: center;
