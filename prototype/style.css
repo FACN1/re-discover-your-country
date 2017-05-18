@@ -343,7 +343,7 @@ Homepage
 }
 
 .HomeBackGround{
-  background-image: url('/home/joudy/Documents/nazarene/re-discover-your-country/prototype/assets/Mount-of-Beatitudes-Galilee-Israel1a.jpg');
+  background-image: url('./assets/Mount-of-Beatitudes-Galilee-Israel1a.jpg');
   background-size: cover;
   display: block;
   filter: blur(5px);
