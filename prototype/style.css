@@ -70,7 +70,7 @@ a {
   position: absolute;
   width: 2.3em;
   left: 0.6em;
-  top: 0.3em
+  top: 0.3em;
 }
 
 .header .fa-calendar {
@@ -89,6 +89,10 @@ a {
   right: 1em;
 }
 
+input[type="button"]:focus, button:focus {
+  outline: none;
+}
+
 /*
 CALENDAR
 */
@@ -102,7 +106,6 @@ CALENDAR
 .calendar-container {
   position: relative;
 }
-
 
 #btnNext {
   color: var(--blue);
@@ -131,6 +134,7 @@ tr.days {
 
 thead {
   color: var(--blue);
+  border-bottom: 1px solid var(--red);
 }
 
 thead td {
@@ -141,8 +145,8 @@ td {
   height: 3rem;
   text-align: center;
   vertical-align: middle;
-  border-left: 1px solid var(--orange);
-  border-right: 1px solid var(--orange);
+  /*border-left: 1px solid var(--orange);
+  border-right: 1px solid var(--orange);*/
   /* width is 100% / 7 */
   width: 14.285714%;
 }
@@ -416,4 +420,89 @@ Homepage Buttons
   background-color: rgba(255, 255, 255, 0.35);
   align: center;
   white-space: normal;
+}
+
+
+
+
+/*
+BookingForm
+*/
+
+/* Full-width input fields */
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input:focus,textarea:focus{
+  outline: 1px solid var(--blue);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    /*width: 50%;*/
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       /*width: 100%;*/
+    }
+}
+
+
+/* Set a style for booking button */
+.bookingbutton {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.cancelbookingbutton {
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.padtoside{
+   padding: 0em 1em;
+}
+
+label {
+  display: block;
+}
+
+.headertext{
+  font-size: 1.5em;
+  color: var(--blue);
+  margin: 0;
+  padding: 0.5em 0;
 }
