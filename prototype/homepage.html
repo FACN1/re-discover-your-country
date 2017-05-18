@@ -5,19 +5,22 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script> -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script type="text/javascript">
       window.onload = function(){
-
-        // var tl = new TimelineLite();
-
-        TweenLite.from('#logo', 1, {bottom: -50, ease:Power2.easeInOut})
-        TweenLite.from('#homepage-text', 1, {opacity: 0, ease:Power2.easeInOut, delay: 1})
-        TweenLite.from('#buttons-container', 1, {bottom: -300, ease:Power2.easeInOut, delay: 1.5})
-
+        var initialDelay = 1.5;
+        TweenLite.from('.HomeBackGround', 1, {
+          css: {
+            'filter': 'blur(15px)','-webkit-filter': 'blur(15px)'
+          },
+          ease:Power2.easeInOut,
+          delay: initialDelay
+        })
+        TweenLite.from('#logo', 0.7, {bottom: -150, ease:Power2.easeInOut, delay: initialDelay})
+        TweenLite.from('#homepage-text', 0.7, {opacity: 0, ease:Power2.easeInOut, delay: initialDelay + 0.5})
+        TweenLite.from('#buttons-container', 0.7, {bottom: -300, ease:Power2.easeInOut, delay: initialDelay + 0.5})
       }
     </script>
   </head>
@@ -33,7 +36,7 @@
       <br>
 
       <p id="homepage-text" lang="ar" xml:lang="ar" dir="rtl" style="font-size: 15pt;text-align: center;">
-        لعملة استراليا، إذ فصل. يذكر الوراء ابتدعها و بعد, به، أم استمرار لبلجيكا.
+      انعش حنيت وطنك واحجز رحلتك الان
       </p>
 
     </div>
