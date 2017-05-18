@@ -89,6 +89,10 @@ a {
   right: 1em;
 }
 
+input[type="button"]:focus, button:focus {
+  outline: none;
+}
+
 /*
 CALENDAR
 */
@@ -102,7 +106,6 @@ CALENDAR
 .calendar-container {
   position: relative;
 }
-
 
 #btnNext {
   color: var(--blue);
@@ -131,6 +134,7 @@ tr.days {
 
 thead {
   color: var(--blue);
+  border-bottom: 1px solid var(--red);
 }
 
 thead td {
@@ -141,8 +145,8 @@ td {
   height: 3rem;
   text-align: center;
   vertical-align: middle;
-  border-left: 1px solid var(--orange);
-  border-right: 1px solid var(--orange);
+  /*border-left: 1px solid var(--orange);
+  border-right: 1px solid var(--orange);*/
   /* width is 100% / 7 */
   width: 14.285714%;
 }
