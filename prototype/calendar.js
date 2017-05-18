@@ -123,11 +123,13 @@ Cal.prototype.showMonth = function(y, m) {
     var chkM = chk.getMonth();
     var todayClass = 'normal';
     var hasTours = Math.random() > 0.7 ? ' hasTours' : ''
+    hasTours = (i===22 || i===23) ? ' hasTours' : ''
     if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay) {
       todayClass = 'today'
     }
+    var linkNumber = (hasTours === '') ? 21 : i
     // make all table datas a link to the same page for now
-    html += '<td class="' + todayClass + hasTours + '">' + '<a href="./list.html">' + i + '</a>' + '</td>';
+    html += '<td class="' + todayClass + hasTours + '">' + '<a href=./list_' + linkNumber + '.html' + '>' + i + '</a>' + '</td>';
     // If Saturday, closes the row
     if ( dow == 6 ) {
       html += '</tr>';
