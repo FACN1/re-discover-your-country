@@ -8,21 +8,6 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script type="text/javascript">
-      window.onload = function(){
-        var initialDelay = 1.5;
-        TweenLite.from('.HomeBackGround', 1, {
-          css: {
-            'filter': 'blur(15px)','-webkit-filter': 'blur(15px)'
-          },
-          ease:Power2.easeInOut,
-          delay: initialDelay
-        })
-        TweenLite.from('#logo', 0.7, {bottom: -150, ease:Power2.easeInOut, delay: initialDelay})
-        TweenLite.from('#homepage-text', 0.7, {opacity: 0, ease:Power2.easeInOut, delay: initialDelay + 0.5})
-        TweenLite.from('#buttons-container', 0.7, {bottom: -300, ease:Power2.easeInOut, delay: initialDelay + 0.5})
-      }
-    </script>
   </head>
   <body>
     <div class="HomeBackGround">
@@ -45,6 +30,6 @@
         <br><br>
       <input type="button" class="WhiteButton" align="center" style="height:80px;width:160px" onclick="location.href='homepage.html';" name="MAP" value="خريطه ">
     </div>
-
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
