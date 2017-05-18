@@ -342,6 +342,21 @@ Homepage
   z-index: 1;
 }
 
+.HomeBackGround{
+  background-image: url('/home/joudy/Documents/nazarene/re-discover-your-country/prototype/assets/Mount-of-Beatitudes-Galilee-Israel1a.jpg');
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  /*box-shadow: 0 9px #999;*/
+  transition: filter 5.0s;
+}
+
 .homecontent {
   background: rgba(255, 255, 255, 0.35);
   box-sizing: border-box;
@@ -384,4 +399,5 @@ Homepage Buttons
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.35);
   align: center;
+  white-space: normal;
 }
